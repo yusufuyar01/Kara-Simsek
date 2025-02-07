@@ -1,0 +1,33 @@
+
+int led1=0;//1.ledi tanımladık ve 0.pine bağladık.
+int led2=1;//2.ledi tanımladık ve 1.pine bağladık.
+int led3=2;//3.ledi tanımladık ve 2.pine bağladık.
+int led4=3;//4.ledi tanımladık ve 3.pine bağladık.
+int i;//pin numarasını belirten i değişkenini atadık.
+
+void setup() {
+ pinMode(led1,OUTPUT);//0.pinden çıkış verdik.
+ pinMode(led2,OUTPUT);//1.pinden çıkış verdik.
+ pinMode(led3,OUTPUT);//2.pinden çıkış verdik.
+ pinMode(led4,OUTPUT);//3.pinden çıkış verdik.
+ 
+}
+
+void loop() {
+    for(i=0;i<=3;i++){//i değeri ilk 0,son 3 değerini alır.Bu değerler pin numarasını belirtir.
+      
+      digitalWrite(i,HIGH);//i değişkenine atanan pin numarasına bağlı ledi yaktık.
+      delay(1000);//1 saniye yanık bekledik.
+      digitalWrite(i,LOW);//i değişkenine atanan pin numarasına bağlı ledi söndürdük.
+      delay(1000);//1 saniye sönük bekledik.
+
+      }
+    for(i=3;i>=0;i--){//i değeri ilk 3(önceki döngünün son değeri),son 0 değerini alır.Bu değerler pin numarasını belirtir.
+      
+      digitalWrite(i,HIGH);//i değişkenine atanan pin numarasına bağlı ledi yaktık.
+      delay(1000);//1 saniye yanık bekledik.
+      digitalWrite(i,LOW);//i değişkenine atanan pin numarasına bağlı ledi söndürdük.
+      delay(1000);//1 saniye sönük bekledik.
+
+      }
+}
