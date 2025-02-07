@@ -49,7 +49,7 @@ void loop() {
 }
 ```  
 ## Kullanım
-Arduino IDE'yi açın ve kodu kopyalayıp yapıştırın.
-Arduino kartınızı bilgisayara bağlayın.
-Doğru portu seçin ve kodu yükleyin.
-LED'lerin sırayla yanıp söndüğünü göreceksiniz.
+* Arduino IDE'yi açın ve kodu kopyalayıp yapıştırın.
+* Arduino kartınızı bilgisayara bağlayın.
+* Doğru portu seçin ve kodu yükleyin.
+* LED'lerin sırayla yanıp söndüğünü göreceksiniz.
